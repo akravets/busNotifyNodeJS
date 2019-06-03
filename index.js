@@ -3,7 +3,7 @@ const CustomRecorder = require('./utils/CustomRecorder')
 const fs = require('fs')
 const path = require('path')
 const moment = require('moment')
-//const reconize = require('./watson/reconize')
+require('dotenv').config();
 
 const image = path.join('/home/dev/busNotifyData','image-capture.jpg')
 
@@ -16,7 +16,9 @@ var rec = new CustomRecorder({
 
 
 var visualRecognition = new VisualRecognitionV3({
-  version: '2018-03-19',
+  version: process.env.VERSION,
+  iam_apikey: process.env.IAM_APIKEY,
+  url: process.env.URL,
 });
 
 const capture = function(){
