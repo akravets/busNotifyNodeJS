@@ -5,8 +5,8 @@ const path = require('path')
 const moment = require('moment')
 require('dotenv').config();
 
-const image = path.join('/home/dev/busNotifyData','image-capture.jpg')
-//const image = path.join('/home/dev/busNotifyData','bus.jpeg')
+//const image = path.join('/home/dev/busNotifyData','image-capture.jpg')
+const image = path.join('/home/dev/busNotifyData','download.jpeg')
 const SCHOOL_BUS = "school bus"
 
 var rec = new CustomRecorder({
