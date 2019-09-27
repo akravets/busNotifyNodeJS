@@ -7,7 +7,7 @@ const nexmo = new Nexmo({
 })
 
 const from = '19167019179'
-const to = '19733489375'
+const to = '19167019179'
 const text = 'Hello from Nexmo'
 
 nexmo.message.sendSms(from, to, text)
